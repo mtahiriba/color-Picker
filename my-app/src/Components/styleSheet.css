@@ -1,0 +1,16 @@
+.primary{
+    color:chartreuse;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 100px;
+}
+
+.MT{
+    background-color: aqua;
+    font-size: 100px;
+}
+
+.error{
+    color: red;
+    font-size: 60px;
+}
