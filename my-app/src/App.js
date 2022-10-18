@@ -1,13 +1,19 @@
 import './App.css';
-import ClickCounter1 from './Components/ClickCounter1'
-import Counter1 from './Components/Counter1';
-import HoverCounter1 from './Components/HoverCounter1';
-import SketchExample from './Components/SketchExample';
+import React, {useState} from 'react';
+import ButtonToggle from './Components/ButtonToggle';
+import Text from './Components/text'
 
 function App() {
+  const [text, setText] = useState(null)
+
+  function handlerCallback(textData){
+    setText(textData)
+  }
+
   return (
     <div className='App'>
-      <SketchExample/>
+        <ButtonToggle parentCallback = {handlerCallback}/>
+        <Text text={text}/>
     </div>
   );
 }
